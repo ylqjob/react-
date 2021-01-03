@@ -1,0 +1,93 @@
+.hello {
+  font-size: 100px;
+  color: blue;
+}
+
+.jsx {
+  color: red;
+}
+
+.img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.d1 {
+  display: block;
+}
+.d2 {
+  display: none;
+}
+
+/* 自定义语言选择器 */
+.qf-lang {
+  &>span {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    cursor: pointer;
+  }
+  &>span.on {
+    background-color: orange;
+    color: white;
+    border-color: orange;
+  }
+}
+
+/* 自定义弹框 */
+.qf-modal {
+  width: 520px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 80px auto;
+  .qf-modal-header {
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 0 20px;
+    height: 50px;
+    overflow: hidden;
+    &>span:last-child {
+      float: right;
+      cursor: pointer;
+    }
+  }
+  .qf-modal-content {
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 12px;
+  }
+  .qf-modal-footer {
+    height: 50px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    &>div {
+      &>span {
+        display: inline-block;
+        padding: 0 15px;
+        line-height: 30px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        float: right;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      &>span.delete {
+        background-color: red;
+        color: white;
+        border-color: red;
+      }
+      &>span.info {
+        background: blue;
+        color: white;
+        border-color: blue;
+      }
+    }
+  }
+}
